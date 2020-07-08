@@ -1,0 +1,15 @@
+
+
+-Display user info : user id, Name, tell,email,address,
+ active_status(ie. student = 1, general user= 0, teacher =2,... )
+-update user info button or link- DONE
+
+-signup for courses button or link
+-payment-display course payment confirmation as PDF after payment process
+-display list of signed up public and private courses and finished courses with grades
+
+-sign up for online international examination mock test
+ -show list of signed up and finished mock with grades
+
+ -online library time slot reservation
+ -online course certification request and payment- display recipt as PDF
