@@ -102,7 +102,7 @@ object has ->
 ---------------------------------------------------------------------------
 back end structure
 object does 
-in 5 main area : HERE---> start on functionalities for profile pages-- then go to front end functionality and site page structures
+in 5 main area : start on functionalities for profile pages-- then go to front end functionality and site page structures
 
 1-user area(student):
  *online Account log in, logout, session time, forgot password
@@ -121,7 +121,7 @@ in 5 main area : HERE---> start on functionalities for profile pages-- then go t
 
 2-user area(teacher):
  *online Account log in, logout, session time, forgot password
- -designing teacher profile--- HERE
+ -designing teacher profile
  -Update profile
  -see scores and grades
  -see private and public signeded up courses and finished courses with grades
@@ -154,7 +154,7 @@ in 5 main area : HERE---> start on functionalities for profile pages-- then go t
 
 
 5-public pages:
- *online user registration and activation 
+ *online user registration and activation. (HERE to optimize)*
  -display each course category info into seperate pages with timetables, tution fee
  -online language level evaluation reservation- and payment
  -online international examination mock test reserve and payment
