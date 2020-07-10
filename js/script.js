@@ -1275,7 +1275,7 @@ function get_cert_list() {
     });
 
 }
-//payment for aditional certificate request //HERE FIX PAYMENT FORM 
+//payment for aditional certificate request //HERE fix PAYMENT FORM 
 function cert_payment() {
     //extrect test id and price from value selected
     /*     $comb_string = ($("#test_name_list").children("option:selected").val()).split("-");

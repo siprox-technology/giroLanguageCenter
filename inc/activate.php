@@ -1,7 +1,7 @@
 <?php
 include_once "db.php";
 include_once "validate.php";
-// db connection
+// db connection 
 $conn = new DB();
 $con = $conn->connect_to_db();
 //validate get info
