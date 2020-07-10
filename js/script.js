@@ -152,18 +152,27 @@ $(document).ready(function () {
 
 //utility  
 //-----------------------------------
-//check to see all form fields are filled */
-function is_form_empty(form) {
+//check to see all form fields are filled (add HTML input fields as needed)*/
+function is_form_empty(form, numOfFields) {
     var valid = 0;
-    $(form).find('input[type=text]').each(function () {
+
+    function markEmptyFields() {
         if ($(this).val() != "") {
             valid++;
-            $(this).css("border-color", "#ced4da");
+            $(this).removeClass("border border-danger")
         } else {
-            $(this).css("border-color", "red");
+            $(this).addClass("border border-danger");
         }
-    });
-    if (valid > 5) {
+    }
+    $(form).find('input[type=text]')
+        .each(markEmptyFields);
+    $(form).find('input[type=password]')
+        .each(markEmptyFields);
+    $(form).find('input[type=email]')
+        .each(markEmptyFields);
+    $(form).find('input[type=address]')
+        .each(markEmptyFields);
+    if (valid >= numOfFields) {
         return false;
     } else {
         return true;
@@ -183,81 +192,83 @@ $("#profile_body_student").on('click', '.popover h3 a', function () {
 // user registration 
 //------------------
 function register_user() {
-    $.ajax({
-        url: 'inc/register.php',
-        type: 'post',
-        data: {
-            name: $('#name').val(),
-            tell: $('#phone').val(),
-            email: $('#email').val(),
-            address: $('#address').val(),
-            password: $('#password').val(),
-            _token: $('#_SignUpToken').val()
-        },
-        beforeSend: function () {
-            // Show preloader
-            $('.preloader_ajax').removeClass('d-none');
-        },
-        success: function (response) {
-            $('.preloader_ajax').addClass('d-none');
-            var result = JSON.parse(response);
-            $("#reg_result").removeClass().addClass("text-center mt-3 p-1");
-            $("#name,#phone,#email,#address,#password").removeClass().addClass("form-control");
-            $("#name_err,#phone_err,#email_err,#address_err,#pass_err").text(" ");
-            $("#reg_result").text(" ");
-            //if validation success
-            if (result[0]['validate result'] == true) {
-                //if reg is success
-                if (result[1]['reg result'] == true) {
-                    $("#reg_result").removeClass("d-none").addClass("alert-success").text(result[1]['msg']);
-                    $("#signUpForm")[0].reset();
-                }
-                // if reg is failed 
-                if (result[1]['reg result'] == false) {
-                    switch (result[1]['msg']) {
-                        case 'Email or Name already exists, please choose different name and email!':
-                            $("#reg_result").removeClass("d-none").addClass("alert-danger").text(result[1]['msg']);
-                            $("#name,#phone,#email,#address,#password").removeClass();
-                            $("#name,#email").addClass("form-control border border-danger");
-                            $("#phone,#address,#password").addClass("form-control");
-                            break;
-                        case 'database error !':
-                        case 'Registration failed: confirmation email could not be sent!':
-                            $("#reg_result").removeClass("d-none").addClass("alert-danger").text(result[1]['msg']);
-                            $("#name,#phone,#email,#address,#password").removeClass().addClass("form-control");
-                            break;
-                        default:
-                            break;
+    if (!(is_form_empty("#signUpForm", 5))) {
+        $.ajax({
+            url: 'inc/register.php',
+            type: 'post',
+            data: {
+                name: $('#name').val(),
+                tell: $('#phone').val(),
+                email: $('#email').val(),
+                address: $('#address').val(),
+                password: $('#password').val(),
+                _token: $('#_SignUpToken').val()
+            },
+            beforeSend: function () {
+                // Show preloader
+                $('.preloader_ajax').removeClass('d-none');
+            },
+            success: function (response) {
+                $('.preloader_ajax').addClass('d-none');
+                var result = JSON.parse(response);
+                $("#reg_result").removeClass().addClass("text-center mt-3 p-1");
+                $("#name,#phone,#email,#address,#password").removeClass().addClass("form-control");
+                $("#name_err,#phone_err,#email_err,#address_err,#pass_err").text(" ");
+                $("#reg_result").text(" ");
+                //if validation success
+                if (result[0]['validate result'] == true) {
+                    //if reg is success
+                    if (result[1]['reg result'] == true) {
+                        $("#reg_result").removeClass("d-none").addClass("alert-success").text(result[1]['msg']);
+                        $("#signUpForm")[0].reset();
+                    }
+                    // if reg is failed 
+                    if (result[1]['reg result'] == false) {
+                        switch (result[1]['msg']) {
+                            case 'Email or Name already exists, please choose different name and email!':
+                                $("#reg_result").removeClass("d-none").addClass("alert-danger").text(result[1]['msg']);
+                                $("#name,#phone,#email,#address,#password").removeClass();
+                                $("#name,#email").addClass("form-control border border-danger");
+                                $("#phone,#address,#password").addClass("form-control");
+                                break;
+                            case 'database error !':
+                            case 'Registration failed: confirmation email could not be sent!':
+                                $("#reg_result").removeClass("d-none").addClass("alert-danger").text(result[1]['msg']);
+                                $("#name,#phone,#email,#address,#password").removeClass().addClass("form-control");
+                                break;
+                            default:
+                                break;
+                        }
                     }
                 }
-            }
-            // if validation fail
-            if (result[0]['validate result'] == false) {
-                // set up error msgs
-                $("#name_err").text((result[0]['name'] == false) ? "Only characters and numbers with no signs" : "");
-                $("#phone_err").text((result[0]['tell'] == false) ? "Only numbers and '+' sign are allowed" : "");
-                $("#email_err").text((result[0]['email'] == false) ? "Format is incorrect." : "");
-                $("#address_err").text((result[0]['address'] == false) ? "Only characters, numbers and ',' sign are allowed" : "");
-                $("#pass_err").text((result[0]['password'] == false) ? "Must be between 5 to 25 characters and digits" : "");
-                // display red borders on required or invalid user inputs  
-                if (result[0]['name'] == false) {
-                    $("#name").addClass("border border-danger");
+                // if validation fail
+                if (result[0]['validate result'] == false) {
+                    // set up error msgs
+                    $("#name_err").text((result[0]['name'] == false) ? "Only characters and numbers with no signs" : "");
+                    $("#phone_err").text((result[0]['tell'] == false) ? "Only numbers and '+' sign are allowed" : "");
+                    $("#email_err").text((result[0]['email'] == false) ? "Format is incorrect." : "");
+                    $("#address_err").text((result[0]['address'] == false) ? "Only characters, numbers and ',' sign are allowed" : "");
+                    $("#pass_err").text((result[0]['password'] == false) ? "Must be between 5 to 25 characters and digits" : "");
+                    // display red borders on required or invalid user inputs  
+                    if (result[0]['name'] == false) {
+                        $("#name").addClass("border border-danger");
+                    }
+                    if (result[0]['tell'] == false) {
+                        $("#phone").addClass("border border-danger");
+                    }
+                    if (result[0]['email'] == false) {
+                        $("#email").addClass("border border-danger");
+                    }
+                    if (result[0]['address'] == false) {
+                        $("#address").addClass("border border-danger");
+                    }
+                    if (result[0]['password'] == false) {
+                        $("#password").addClass("border border-danger");
+                    }
                 }
-                if (result[0]['tell'] == false) {
-                    $("#phone").addClass("border border-danger");
-                }
-                if (result[0]['email'] == false) {
-                    $("#email").addClass("border border-danger");
-                }
-                if (result[0]['address'] == false) {
-                    $("#address").addClass("border border-danger");
-                }
-                if (result[0]['password'] == false) {
-                    $("#password").addClass("border border-danger");
-                }
-            }
-        },
-    });
+            },
+        });
+    }
 }
 // reset reg form before opening
 $("#registerLink").on("click", function () {
@@ -741,7 +752,7 @@ function course_payment() {
     $("#crdt_card_name,#crdt_card_num,#exp_month,#exp_year,#cvv,#pin").removeClass()
         .addClass("form-control form-control_xs");
     // check if all card fields are populated  
-    if ((is_form_empty("#crd-card-form") == false)) {
+    if ((is_form_empty("#crd-card-form", 6) == false)) {
         $.ajax({
             url: 'controller.php',
             type: 'post',
@@ -1092,7 +1103,7 @@ function test_payment() {
     //reset test selection border color
     $('#test_name_list').removeClass().addClass("form-control");
     // test to see if paymt form is empty or test has benn selected
-    if (is_form_empty('#testSignUpForm') == false && $comb_string.length > 1) {
+    if (is_form_empty('#testSignUpForm', 6) == false && $comb_string.length > 1) {
         $.ajax({
             url: 'controller.php',
             type: 'post',
@@ -1264,7 +1275,7 @@ function get_cert_list() {
     });
 
 }
-//payment for aditional certificate request
+//payment for aditional certificate request //HERE FIX PAYMENT FORM 
 function cert_payment() {
     //extrect test id and price from value selected
     /*     $comb_string = ($("#test_name_list").children("option:selected").val()).split("-");
@@ -1276,7 +1287,7 @@ function cert_payment() {
     //extract price value
     var index = $('#cert_name_list').children("option:selected").text().search("--price: ");
     var price = $('#cert_name_list').children("option:selected").text().substr(index + 9);
-    if (is_form_empty('#cert_req_SignUpForm') == false) {
+    if (is_form_empty('#cert_req_SignUpForm', 6) == false) {
         $.ajax({
             url: 'controller.php',
             type: 'post',

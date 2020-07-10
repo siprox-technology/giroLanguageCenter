@@ -15,8 +15,8 @@
               <div class="row">
                 <div class="col-lg-12">
                   <form id="signUpForm">
-                    <div class="row tex">
-                      <div class="col-md-6 mx-auto">
+                    <div class="row">
+                      <div class="col-10 col-lg-6 mx-auto">
                         <!-- name -->
                         <div class="form-group">
                           <input class="form-control" id="name" type="text" maxlength="40" placeholder="Name *"

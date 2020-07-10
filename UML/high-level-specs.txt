@@ -154,7 +154,7 @@ in 5 main area : start on functionalities for profile pages-- then go to front e
 
 
 5-public pages:
- *online user registration and activation. (HERE to optimize)*
+ 1*online user registration and activation.
  -display each course category info into seperate pages with timetables, tution fee
  -online language level evaluation reservation- and payment
  -online international examination mock test reserve and payment
