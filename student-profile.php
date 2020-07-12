@@ -124,7 +124,7 @@ else
                       data-target='#newTestSignUp'>NEW TEST</a>
                     <a class="dropdown-item" onclick="" id="testResultLink" data-toggle='modal'
                       data-target='#currentTest'>TEST RESULTS</a>
-                    <a class="dropdown-item" onclick="" id="certificateListLink" data-toggle='modal'
+                    <a class="dropdown-item" onclick="get_cert_list()" id="certificateListLink" data-toggle='modal'
                       data-target='#certificate'>CERTIFICATES</a>
                   </div>
                 </li>

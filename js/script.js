@@ -1054,7 +1054,7 @@ function download_test_payment_pdf() {
     var user_id = $('#test_pymnt_user_id').text();
     var test_id = $('#test_test_id').text();
     var pdf_type = "test";
-    // HERE customize pdf generator class
+    // customize pdf generator class
     window.open("inc/pdf-generator.php?ref=" + ref_num +
         "&testId=" + test_id +
         "&amount=" + amount +
@@ -1275,7 +1275,9 @@ function get_cert_list() {
     });
 
 }
-//payment for aditional certificate request //HERE fix PAYMENT FORM 
+
+
+//payment for aditional certificate request
 function cert_payment() {
     //extrect test id and price from value selected
     /*     $comb_string = ($("#test_name_list").children("option:selected").val()).split("-");
