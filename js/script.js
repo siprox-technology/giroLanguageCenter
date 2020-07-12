@@ -280,7 +280,7 @@ $("#registerLink").on("click", function () {
 
 
 
-//log in logout session time forget pass
+//log in, logout, session, time forget pass
 //-------------------------------------
 // reset log in form before opening 
 $("#logInLink").on("click", function () {

@@ -4,35 +4,36 @@ session_start();
 session_regenerate_id();
 if($_SERVER['REQUEST_METHOD']!== 'POST')
 {
-    die('Invalid Request');
-}
-if(isset($_SESSION['loggedin']))
-{
-    switch ($_SESSION['active_status']) {
-        case '0':
-            echo 'login Success(Not active)';
-            break;
-        case '1': 
-            echo 'login Success(Student)';
-            break;
-        case '2':
-            echo 'login Success(Teacher)';
-        break;
-        //
-        default:
-            // code...
-            break;
-    }
+    header('location:../index.php');
 }
 else
 {
-    if($_SERVER['REQUEST_METHOD']==='POST'){
+    if(isset($_SESSION['loggedin']))
+    {
+        switch ($_SESSION['active_status']) {
+            case '0':
+                echo 'login Success(Not active)';
+                break;
+            case '1': 
+                echo 'login Success(Student)';
+                break;
+            case '2':
+                echo 'login Success(Teacher)';
+            break;
+            //
+            default:
+                // code...
+                break;
+        }
+    }
+    else
+    {
         if((!isset($_POST['_token'])) || 
         (!isset($_SESSION['_token'])) || ($_POST['_token']!== $_SESSION['_token']))
         { 
             /* another page with wrong token value is trying to hajack 
             the session */
-           /* False error msg to prevent session hijacking */
+            /* False error msg to prevent session hijacking */
             echo "Database Error!";
         }
         else
@@ -106,7 +107,8 @@ else
             }
             $con->close();
         }
-    } 
+    }
 }
+
 
 ?>

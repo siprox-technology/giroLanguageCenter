@@ -1,0 +1,2 @@
+ 1*online user registration and activation.
+ *online Account log in, logout, session time, forgot password

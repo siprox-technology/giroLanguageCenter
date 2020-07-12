@@ -154,15 +154,9 @@ in 5 main area : start on functionalities for profile pages-- then go to front e
 
 
 5-public pages:
- 1*online user registration and activation.
+
  -display each course category info into seperate pages with timetables, tution fee
- -online language level evaluation reservation- and payment
- -online international examination mock test reserve and payment
- -online Employment request form
  -show published news, 
- -online branch request form
- -online website visit info
- -online file download
  
 pages with attributes as Front-end Structure above---
 -online google map integration for location and address info and institute branches info ادرس شعبات
