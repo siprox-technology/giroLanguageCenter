@@ -125,7 +125,7 @@ session_regenerate_id();
       <div class="col-12 mb-4">
         <h3 class="mb-3">How to Apply</h3>
         <ul class="list-styled">
-          <li> <a data-toggle='modal' data-target='#signupModal'>Regiter</a> with us online and apply for 
+          <li> <a data-toggle='modal' data-target='#signupModal'>Register</a> with us online and apply for 
           any course through your personal profile</li>
         </ul>
       </div>
