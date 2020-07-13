@@ -48,7 +48,7 @@ else
         <div class="container">
           <div class="row no-gutters">
             <div class="col-lg-4 text-center text-lg-left">
-              <a class="text_grey mr-3"><strong>CALL</strong> +44 300 303 0266</a>
+              <a class="text_grey mr-3"><strong>CALL</strong> +98 905 4312848</a>
               <ul class="list-inline d-inline">
                 <li class="list-inline-item mx-0"><a class="text_grey d-inline-block p-2 " href="#"><i
                       class="fab fa-facebook-f"></i></a></li>

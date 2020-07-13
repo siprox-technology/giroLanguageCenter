@@ -73,7 +73,7 @@ session_regenerate_id();
             Whether you are preparing for academic study, or seeking professional linguistic skills to enhance your career, 
             GIRO Language Center reflects the specialist nature of the language school itself, where quality teaching is supreme. 
             Our primary goal is to educate students to become communicatively proficient and advance their language skills with one of our language courses.</p>
-          <a href="tel:+8802057843248" class="text-color h5 d-block">+44 300 303 0266</a>
+          <a href="tel:+8802057843248" class="text-color h5 d-block">+98 905 4312848</a>
           <a href="mailto:contact-giro-center@gmail.com" class="mb-5 text-color h5 d-block">contact-giro-center@gmail.com</a>
           <p><b>Address:</b></p>
           <p>No 33 Woodbridge avenue, clifton village NG11 8GP UK</p>

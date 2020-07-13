@@ -15,9 +15,18 @@
                 LANGUAGE<br>CENTER</a>
             </div>
             <ul class="list-unstyled mt-3">
-              <li class="mb-2">No 33 Woodbridge avenue, clifton village NG11 8GP UK</li>
-              <li class="mb-2">+44 300 303 0266</li>
-                          <li class="mb-2">contact-giro-center@gmail.com</li>
+              <li class="mb-2">
+                <p class="mb-0 font-weight-bold text-white">Address:</p>
+                <p class="mb-0">No 9 Ahmadi St Janbaz blvd Mashhad Iran.</p>
+              </li>
+              <li class="mb-2">
+                <p class="mb-0 font-weight-bold text-white">Phone:</p>
+                <p class="mb-0">+98 905 4312848</p>             
+              </li>
+              <li class="mb-2">
+                <p class="mb-0 font-weight-bold text-white">Email:</p>
+                <p class="mb-0">contact-giro-center@gmail.com</p>  
+              </li>
             </ul>
           </div>
 

@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row no-gutters">
           <div class="col-lg-4 text-center text-lg-left">
-            <a class="text-color mr-3" ><strong>CALL</strong> +44 300 303 0266</a>
+            <a class="text-color mr-3" ><strong>CALL</strong> +98 905 4312848</a>
             <ul class="list-inline d-inline">
               <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
                     class="fab fa-facebook-f"></i></a></li>
