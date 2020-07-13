@@ -1,2 +1,4 @@
- 1*online user registration and activation.
- *online Account log in, logout, session time, forgot password
+ 1.User registration and activation.
+ 2.Account log in, logout, session time, forgot password
+ 3.User profile with following functionalities:
+ 3.1.Add and update user image with appropriate file type and size.(check image upload refresh!)

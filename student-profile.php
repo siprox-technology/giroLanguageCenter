@@ -160,7 +160,7 @@ else
             </div>
             <!-- user image -->
             <div class="row justify-content-center ml-4 align-self-center mb-sm-2 mx-sm-auto ">
-              <img src="images/user_profile_images/<?php echo strval( $_SESSION['email']);?>.jpg" alt=""
+              <img src="images/user_profile_images/<?php echo strval( $_SESSION['email']).".jpg?";echo rand(1,5000);?>" alt=""
                 class="rounded-circle bg-dark" id="user_image">
             </div>
             <!-- change img btn -->

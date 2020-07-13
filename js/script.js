@@ -577,8 +577,8 @@ function change_user_img() {
                             case true:
                                 window.setTimeout(function () {
                                     $('.preloader_ajax').addClass('d-none');
-                                    location.reload();
-                                }, 3000);
+                                    location.reload(true);
+                                }, 1500);
                                 break;
                             case false:
                                 $('.preloader_ajax').addClass('d-none');

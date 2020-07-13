@@ -105,8 +105,8 @@ object does
 in 5 main area : start on functionalities for profile pages-- then go to front end functionality and site page structures
 
 1-user area(student):
- *online Account log in, logout, session time, forgot password
- *designing student profile-user image default
+
+
  *add user image
  *update profile
  *online sign up for public and private courses 
