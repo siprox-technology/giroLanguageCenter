@@ -120,16 +120,13 @@ else
                     Assessment
                   </a>
                   <div class="dropdown-menu" aria-labelledby="user_test_info_drop">
-                    <a class="dropdown-item" onclick="" id="newTestLink" data-toggle='modal'
+                    <a class="dropdown-item" onclick="get_avail_test()" id="newTestLink" data-toggle='modal'
                       data-target='#newTestSignUp'>NEW TEST</a>
                     <a class="dropdown-item" onclick="" id="testResultLink" data-toggle='modal'
                       data-target='#currentTest'>TEST RESULTS</a>
                     <a class="dropdown-item" onclick="get_cert_list()" id="certificateListLink" data-toggle='modal'
                       data-target='#certificate'>CERTIFICATES</a>
                   </div>
-                </li>
-                <li class="nav-item @@events">
-                  <a class="nav-link" href="events.html">EVENTS</a>
                 </li>
                 <li class="nav-item ">
                   <a class="nav-link" href="index.php">Home</a>
