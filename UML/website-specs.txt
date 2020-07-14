@@ -106,23 +106,6 @@ in 5 main area : start on functionalities for profile pages-- then go to front e
 
 1-user area(student):
 
- *payment-
-
- *
- *show list of signed up and finished any test with grades 
- *online course certification request and payment- display recipt as PDF
- *list of achieved certification request
-
-
-
-2-user area(teacher):
- *online Account log in, logout, session time, forgot password
- -designing teacher profile
- -Update profile
- -see scores and grades
- -see private and public signeded up courses and finished courses with grades
- -see and confirm language level evaluations and publish gardes
-
 
 3-user area(staff):
  -online Account log in, logout, session time

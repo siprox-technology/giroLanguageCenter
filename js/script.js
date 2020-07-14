@@ -1018,11 +1018,6 @@ function get_avail_test() {
 
 }
 
-
-function test() {
-    $('#testSignUpForm')[0].reset();
-    $('#test_signup_payment').carousel(0);
-}
 //signup and pay for new test
 function test_payment() {
 
