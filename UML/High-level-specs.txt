@@ -1,6 +1,9 @@
  1.User registration and activation.
- 2.Account log in, logout, session time, forgot password
+ 2.Account log in, logout, session time, forgot password.
  3.User profile with following functionalities:
- 3.1.Add and update user image with appropriate file type and size.(check image upload refresh!)
- 3.2.Update profile info (address and phone number)
- 3.3.Sign up for public and private courses (here)
+ 3.1.Add and update user image with appropriate file type and size.
+ 3.2.Update profile info (address and phone number).
+ 3.3.Sign up for public and private courses.
+ 3.4.display course payment confirmation as PDF after payment process.
+ 3.5.show list of signed up public and private courses and finished courses with grades
+ 3.6.online international examination mock test reserve and payment-display payment confirmation as PDF after payment process (HERE)

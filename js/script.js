@@ -639,11 +639,8 @@ $("#newCourseLink").on("click", function () {
 function get_course_names() {
     // set course name list, level list and price empty- set btn to disable
     var selectedOption = $('#course_category_list').val();
-    $('#course_name_list').empty();
-    $('#course_name_list').append("<option selected>Choose...</option>");
-    $('#course_level_list').empty();
-    $('#course_level_list').append("<option selected>Choose...</option>");
-
+    $('#course_name_list').empty().append("<option selected>Choose...</option>");
+    $('#course_level_list').empty().append("<option selected>Choose...</option>");
     $('#signUpFormPrice').empty();
     $('#joinAndPayBtn').prop('disabled', true);
     //check to see that value selected is not null. 100 is null
@@ -658,10 +655,8 @@ function get_course_names() {
             success: function (response) {
                 var course_names = JSON.parse(response);
                 var row;
-                $('#course_name_list').empty();
-                $('#course_level_list').empty();
-                $('#course_level_list').append("<option selected>Choose...</option>");
-                $('#course_name_list').append("<option selected>Choose...</option>");
+                $('#course_name_list,#course_level_list').empty();
+                $('#course_level_list,#course_name_list').append("<option selected>Choose...</option>");
                 for (var i = 0; i < course_names.length; i++) {
                     row = course_names[i];
                     $('#course_name_list').append(
@@ -675,8 +670,7 @@ function get_course_names() {
 //get levels list from selected course name
 function get_course_levels() {
     //set level list and price empty, -set btn to disable
-    $('#course_level_list').empty();
-    $('#course_level_list').append("<option selected>Choose...</option>");
+    $('#course_level_list').empty().append("<option selected>Choose...</option>");
     $('#joinAndPayBtn').prop('disabled', true);
     $('#signUpFormPrice').empty();
     var selectedOption = $('#course_name_list').val();
@@ -723,8 +717,7 @@ function get_course_fees() {
                 title: selectedTitle
             },
             success: function (response) {
-                $('#signUpFormPrice').empty();
-                $('#signUpFormPrice').append(JSON.parse(response));
+                $('#signUpFormPrice').empty().append(JSON.parse(response));
                 $('#joinAndPayBtn').prop('disabled', false);
             },
         });
@@ -973,75 +966,6 @@ function update_class_list() {
     });
 
 }
-// update class list teacher
-function update_class_list_teacher() {
-    $.ajax({
-        url: 'controller.php',
-        type: 'post',
-        data: {
-            req_type: 'get class list teacher',
-            user_id: $('#h_user_id').val()
-        },
-        beforeSend: function () {
-            // Show preloader
-            $('.preloader_ajax').removeClass('d-none');
-        },
-        success: function (response) {
-            $('.preloader_ajax').addClass('d-none');
-            result = JSON.parse(response);
-            $('#classListcontent').empty();
-            $('#classListcontentMobile').empty();
-            var finished = 0;
-            var inProgress = 0;
-            if (result[0] !== "") {
-                for (var i = 0; i < result.length; i++) {
-                    inProgress = result[i][7] == 0 ? inProgress + 1 : inProgress;
-                    finished = result[i][7] == 1 ? finished + 1 : finished;
-                    $('#classListcontent').append(
-                        "<tr><td>" + result[i][0] + "</td>" +
-                        "<td>" + result[i][1] + "</td>" +
-                        "<td>" + result[i][2] + "</td>" +
-                        "<td>" + result[i][3] + "</td>" +
-                        "<td>" + result[i][4] + "</td>" +
-                        "<td>" + result[i][5] + "</td>" +
-                        "<td>" + result[i][6] + "</td>" +
-                        (result[i][7] == 0 ? "<td class='text-warning font-weight-bold'>In Progress</td>" : "<td class='text-success font-weight-bold'>Finished</td>")
-                    );
-                    $('#classListcontentMobile').append(
-                        "<tr>" +
-                        "<td>" + result[i][0] + "</td>" +
-                        "<td>" + result[i][2] + "</td>" +
-                        "<td>" + (result[i][7] == 0 ?
-                            "<td class='text-warning font-weight-bold'>In Progress</td>" :
-                            "<td class='text-success font-weight-bold'>Finished</td>") +
-                        "</td>" +
-                        "<td>" + "<a class='btn btn-primary'id=" +
-                        "'hid-pop-" + i + "'" + "onclick ='close_other_pop()'" +
-                        "data-toggle='popover'" + "title='Class Details" +
-                        "<a>X</a>" + "'" +
-                        "data-content ='" + "<b>level</b> : " + result[i][1] + "<br>" +
-                        "<b>Duration</b> = " + result[i][3] + "<br>" +
-                        "<b>Days</b> = " + result[i][4] + "<br>" +
-                        "<b>Time</b> = " + result[i][5] + "<br>" +
-                        "<b>Room</b> = " + result[i][6] + "<br>" +
-                        "'" +
-                        "data-html='true'" + "data-animation='true'" + ">" + "+" +
-                        "</td>" +
-                        "</tr>"
-                    );
-                }
-                $('[data-toggle="popover"]').popover();
-                $('#curentClassNumber,#curentClassNumber_profile').text(inProgress);
-                $('#finishedClassNumber,#finishedClassNumber_profile').text(finished);
-            } else {
-                $('#curentClassNumber,#curentClassNumber_profile').text(inProgress);
-                $('#finishedClassNumber,#finishedClassNumber_profile').text(finished);
-            }
-
-        },
-    });
-}
-
 //online test reserve and payment
 //display payment confirmation as PDF after payment process
 //show list of signed up and finished any test with grades 
