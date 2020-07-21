@@ -11,7 +11,7 @@ session_regenerate_id();
 
 <head>
   <meta charset="utf-8">
-  <title>GIRO-news</title>
+  <title>GIRO-News</title>
 
   <?php
   include_once "inc/head-files.php";

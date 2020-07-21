@@ -92,7 +92,7 @@
                 <a class="nav-link" href="courses.php">COURSES</a>
               </li>
               <li class="nav-item @@news <?php if ($currentPage == 'news.php') {echo "active";} ?>">
-                <a class="nav-link" href="news.php">news</a>
+                <a class="nav-link" href="news.php">News</a>
               </li>
               <li class="nav-item @@contact <?php if ($currentPage == 'contact.php') {echo "active";} ?>">
                 <a class="nav-link" href="contact.php">CONTACT</a>
