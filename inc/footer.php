@@ -17,7 +17,7 @@
             <ul class="list-unstyled mt-3">
               <li class="mb-2">
                 <p class="mb-0 font-weight-bold text-white">Address:</p>
-                <p class="mb-0">No 9 Ahmadi St Janbaz blvd Mashhad Iran.</p>
+                <p class="mb-0">No 9, Ahmadi St Janbaz blvd, Mashhad Iran.</p>
               </li>
               <li class="mb-2">
                 <p class="mb-0 font-weight-bold text-white">Phone:</p>

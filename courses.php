@@ -46,7 +46,7 @@ session_regenerate_id();
       <div class="row">
         <div class="col-md-8">
           <ul class="list-inline custom-breadcrumb">
-            <li class="list-inline-item"><a class="h2 text-primary font-secondary" href="courses.php">Our Courses</a>
+            <li class="list-inline-item"><a class="h2 text-lighten font-secondary" href="courses.php">Our Courses</a>
             </li>
             <li class="list-inline-item text-white h3 font-secondary "></li>
           </ul>
