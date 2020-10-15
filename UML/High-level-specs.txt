@@ -11,7 +11,7 @@ List of back end functionalities:
  3.6.Online international examination mock test reserve 
     and payment-display payment confirmation as PDF after payment process.
  3.7.Show list of signed up and finished any test with grades.
- 3.7.Online course certification request and payment- display recipt as PDF
+ 3.7.Online course certification request and payment- display receipt as PDF
 
 
  
