@@ -1,15 +1,13 @@
+
+
+-review code and test for improvements on server
+
 -Change addresses
 -change address map
 -address and footer in giro
 -about and privacy page giro
 -new course sign up modal bank transfer
 -change user image modal
-
--add browser compatibility code for css
--cookie accept msg
--refresh profile page after payment confirmation for test and courses
--review code and test for improvements
-
 
 
 -write db contents and tables

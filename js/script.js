@@ -794,6 +794,9 @@ function course_payment() {
                             /* clear payment result info on creadit card carousel */
                             $("#payment_result_info").removeClass().addClass("d-none").text("");
                         }, 1000);
+                        $('body').on('click', function () {
+                            location.reload();
+                        })
                         break;
                         // display validation and other backend errors
                     case false:
@@ -1069,6 +1072,9 @@ function test_payment() {
                                 $('#test_signup_payment').carousel("next");
                             }, 1500
                         )
+                        $('body').on('click', function () {
+                            location.reload();
+                        })
                         // design payment confirmation page and download pdf
                         break;
                     case false:
