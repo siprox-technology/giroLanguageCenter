@@ -1,2 +1,10 @@
-Change addresses
-change address map
+-Change addresses
+-change address map
+-address and footer in giro
+-add browser compatibility code for css
+-add stripe payment
+-cookie accept msg
+-about and privacy page giro
+-uncomment session time.php
+
+-review code and test for improvements
