@@ -6,5 +6,12 @@
 -cookie accept msg
 -about and privacy page giro
 -uncomment session time.php
+-new course sign up modal bank transfer
 
 -review code and test for improvements
+
+
+
+db update
+
+

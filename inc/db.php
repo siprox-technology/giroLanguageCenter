@@ -206,17 +206,14 @@ class DB{
             $con = $this->connect_to_db();            
             // Prepare our SQL
             $stmt = $con->prepare(
-            "SELECT title,language_level,start_date,
-            duration,day,time,room_no,
-            (select name from siproxte_giro.user where 
-            id = course.FK_teacher_id_course_user) as teacher_name
-            ,status,grade FROM 
+            "SELECT title,language_level,teacher_name,start_date,duration,day,time,room_no,
+            status,grade FROM 
             siproxte_giro.course inner join siproxte_giro.timetable
             on (course.id = timetable.FK_course_id_timetable_course) 
             inner join
             siproxte_giro.signed_up_course on
             (course.id = signed_up_course.FK_course_id_signed_course) where
-            FK_user_id_signed_user = ? order by start_date");
+            FK_user_id_signed_user = ? order by start_date;");
             $stmt->bind_param('s',$user_id);
             $stmt->execute();
             $result = $stmt->get_result();
@@ -228,7 +225,7 @@ class DB{
             $con->close();
             return json_encode($course_list);
         }
-        public function get_class_list_teacher($user_id)/* here */
+        public function get_class_list_teacher($user_id)
         {
             //SET COURSE LIST ARRAY
             $course_list[]="";

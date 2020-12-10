@@ -177,7 +177,7 @@ switch($request_type)
         $edit_result=[false,'','',''];
         /* check values */
 
-        $phone = ($val->validateDigits($_POST['phone']))==true?$_POST['phone']:false;
+        $phone = ($val->validtePhone($_POST['phone']))==true?$_POST['phone']:false;
         $address = ($val->validateAnyName($_POST['address']))==true?$_POST['address']:false;
         $password = ($val->validatePass($_POST['password']))==true?$_POST['password']:false;
 
