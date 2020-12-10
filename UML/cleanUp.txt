@@ -1,17 +1,23 @@
 -Change addresses
 -change address map
 -address and footer in giro
--add browser compatibility code for css
--add stripe payment
--cookie accept msg
 -about and privacy page giro
--uncomment session time.php
 -new course sign up modal bank transfer
+-change user image modal
 
+-add browser compatibility code for css
+-cookie accept msg
+-refresh profile page after payment confirmation for test and courses
 -review code and test for improvements
 
 
 
-db update
+-write db contents and tables
+-update database diagram
+-write backend functionalities
+-write front end structure
+-organasie files into inc, models, process file, and library
 
+
+db update
 

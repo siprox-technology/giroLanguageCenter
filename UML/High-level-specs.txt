@@ -5,13 +5,12 @@ List of back end functionalities:
  3.User profile with following functionalities:
  3.1.Add and update user image with appropriate file type and size.+
  3.2.Update profile info (address and phone number).+
- 3.3.Sign up for public and private courses.
- 3.4.Display course payment confirmation as PDF after payment process.
- 3.5.Show list of signed up public and private courses and finished courses with grades
- 3.6.Online international examination mock test reserve 
-    and payment-display payment confirmation as PDF after payment process.
- 3.7.Show list of signed up and finished any test with grades.
- 3.7.Online course certification request and payment- display receipt as PDF
+ 3.3.Sign up for public and private courses.+
+ 3.4.Display course payment confirmation as PDF after payment process.+
+ 3.5.Show list of signed up public and private courses and finished courses with grades+
+ 3.6.Online international examination mock test reserve and payment.+
+ 3.7.Show list of signed up and finished any test with grades.+
+ 3.7.Online course certification request and payment- display receipt as PDF+
 
 
 
