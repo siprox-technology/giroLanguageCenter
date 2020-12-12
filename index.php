@@ -103,7 +103,7 @@ session_regenerate_id();
           <div class="row feature-blocks bg-gray justify-content-between">
             <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
               <i class="fas fa-book mb-xl-4 mb-lg-3 mb-4 feature-icon"></i>
-              <h3 class="mb-xl-4 mb-lg-3 mb-4">Scholorship News</h3>
+              <h3 class="mb-xl-4 mb-lg-3 mb-4">Scholorships</h3>
               <p>We are offering scholarship to students with outstanding achievements </p>
             </div>
             <div class="col-sm-6 col-xl-5 mb-xl-5 mb-lg-3 mb-4 text-center text-sm-left">
@@ -168,97 +168,85 @@ session_regenerate_id();
           </div>
         </div>
       </div>
-      <!-- course list -->
+      <!-- courses list -->
       <div class="row justify-content-center">
         <!-- course item IELTS-->
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <div class="card p-0 border-primary rounded-0 hover-shadow">
-            <img class="card-img-top rounded-0" src="images/courses/ielts.jpg">
-            <div class="card-body">
-              <ul class="list-inline mb-2">
-                <li class="list-inline-item"><i class="fa fa-calendar mr-1 text-color"></i>02-14-2020</li>
-                <li class="list-inline-item">
-                  <p class="text-color">International Exams</p>
-                </li>
-              </ul>
-              <a>
-                <h4 class="card-title"><a class="text-color" href="ielts.php">IELTS</a></h4>
-              </a>
-              <p> Our IELTS preparation course will
-                ensure you have all the skills necessary
-                to take the IELTS exam and achieve desirable results.
-                We provide students the strategies for success
-                in all areas of the exam. </p>
-              <a data-toggle='modal' data-target='#loginModal' class="btn btn-primary btn-sm">Apply now</a>
+        <a class="text-color" href="ielts.php">
+          <div class="col-lg-3 col-sm-6 mb-5">
+            <div class="card p-0 border-primary rounded-0 hover-shadow">
+              <img class="card-img-top rounded-0" src="images/courses/ielts.jpg">
+              <div class="card-body">
+                <a>
+                  <h4 class="card-title">IELTS</h4>
+                </a>
+                <p> Our IELTS preparation course will
+                  ensure you have all the skills necessary
+                  to take the IELTS exam and achieve desirable results.
+                  We provide students the strategies for success
+                  in all areas of the exam. </p>
+                <a data-toggle='modal' data-target='#loginModal' class="btn btn-primary btn-sm">Apply now</a>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         <!-- course item TOEFL-->
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <div class="card p-0 border-primary rounded-0 hover-shadow">
-            <img class="card-img-top rounded-0" src="images/courses/toefl.jpg">
-            <div class="card-body">
-              <ul class="list-inline mb-2">
-                <li class="list-inline-item"><i class="fa fa-calendar mr-1 text-color"></i>02-14-2020</li>
-                <li class="list-inline-item">
-                  <p class="text-color">International Exam</p>
-                </li>
-              </ul>
-              <a href="toefl.php">
-                <h4 class="card-title"><a class="text-color" href="toefl.php">TOEFL</a></h4>
-              </a>
-              <p class="card-text mb-4"> Our TOEFL preparation course will
-                ensure you have all the skills necessary
-                to take the TOEFL exam and achieve desirable results.
-                We provide students the strategies for success
-                in all areas of the exam. </p>
-              <a data-toggle='modal' data-target='#loginModal' class="btn btn-primary btn-sm">Apply now</a>
+        <a class="text-color" href="toefl.php">
+          <div class="col-lg-3 col-sm-6 mb-5">
+            <div class="card p-0 border-primary rounded-0 hover-shadow">
+              <img class="card-img-top rounded-0" src="images/courses/toefl.jpg">
+              <div class="card-body">
+                <a href="toefl.php">
+                  <h4 class="card-title">TOEFL</h4>
+                </a>
+                <p class="card-text mb-4"> Our TOEFL preparation course will
+                  ensure you have all the skills necessary
+                  to take the TOEFL exam and achieve desirable results.
+                  We provide students the strategies for success
+                  in all areas of the exam. </p>
+                <a data-toggle='modal' data-target='#loginModal' class="btn btn-primary btn-sm">Apply now</a>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         <!-- course item GENERAL ENGLISH-->
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <div class="card p-0 border-primary rounded-0 hover-shadow">
-            <img class="card-img-top rounded-0" src="images/courses/generalEnglish.png" alt="course thumb">
-            <div class="card-body">
-              <ul class="list-inline mb-2">
-                <li class="list-inline-item"><i class="fa fa-calendar mr-1 text-color"></i>02-14-2020</li>
-                <li class="list-inline-item"><a class="text-color">English</a></li>
-              </ul>
-              <a href="genEnglish.php">
-                <h4 class="card-title"><a class="text-color" href="genEnglish.php">
-                    General English for kids and adults</a></h4>
-              </a>
-              <p class="card-text mb-4"> Our regular English programme
-                is aimed at the development of the essential skills, necessary
-                for successful communication in English language.
-              </p>
-              <a data-toggle='modal' data-target='#loginModal' class="btn btn-primary btn-sm">Apply now</a>
+        <a class="text-color" href="genEnglish.php">
+          <div class="col-lg-3 col-sm-6 mb-5">
+            <div class="card p-0 border-primary rounded-0 hover-shadow">
+              <img class="card-img-top rounded-0" src="images/courses/generalEnglish.png" alt="course thumb">
+              <div class="card-body">
+                <a href="genEnglish.php">
+                  <h4 class="card-title">
+                      General English for kids and adults</h4>
+                </a>
+                <p class="card-text mb-4"> Our regular English programme
+                  is aimed at the development of the essential skills, necessary
+                  for successful communication in English language.
+                </p>
+                <a data-toggle='modal' data-target='#loginModal' class="btn btn-primary btn-sm">Apply now</a>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         <!-- course item SPECIALISED ENGLISH-->
-        <div class="col-lg-4 col-sm-6 mb-5">
-          <div class="card p-0 border-primary rounded-0 hover-shadow">
-            <img class="card-img-top rounded-0" src="images/courses/spec-English.png" alt="course thumb">
-            <div class="card-body">
-              <ul class="list-inline mb-2">
-                <li class="list-inline-item"><i class="fa fa-calendar mr-1 text-color"></i>02-14-2020</li>
-                <li class="list-inline-item"><a class="text-color">English</a></li>
-              </ul>
-              <a href="specEnglish.php">
-                <h4 class="card-title"><a class="text-color" href="specEnglish.php">
-                    Specialised English for Business and tourism</a></h4>
-              </a>
-              <p class="card-text mb-4"> Our Specialised English programme
-                is aimed at the development of the essential skills, necessary
-                for successful communication in English language in variety of situtaions like
-                Business and Tourism.</p>
-              <a data-toggle='modal' data-target='#loginModal' class="btn btn-primary btn-sm">Apply now</a>
+        <a href="specEnglish.php">
+          <div class="col-lg-3 col-sm-6 mb-5">
+            <div class="card p-0 border-primary rounded-0 hover-shadow">
+              <img class="card-img-top rounded-0" src="images/courses/spec-English.png" alt="course thumb">
+              <div class="card-body">
+                
+                  <h4 class="card-title"><a class="text-color" href="specEnglish.php">
+                      Specialised English for Business and tourism</h4>
+                </a>
+                <p class="card-text mb-4"> Our Specialised English programme
+                  is aimed at the development of the essential skills, necessary
+                  for successful communication in English language in variety of situtaions like
+                  Business and Tourism.</p>
+                <a data-toggle='modal' data-target='#loginModal' class="btn btn-primary btn-sm">Apply now</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </a>
       <!-- /course list -->
       <!-- mobile see all button -->
       <div class="row">
@@ -277,7 +265,7 @@ session_regenerate_id();
         <div class="col-12 text-center">
           <h6 class="text-white font-secondary mb-0">Click to Join the Advance Workshop</h6>
           <h2 class="section-title text-white">Training In Advannce Networking</h2>
-          <a href="contact.php" class="btn btn-secondary">join now</a>
+          <a data-toggle="modal" data-target="#signupModal" class="btn btn-secondary">join now</a>
         </div>
       </div>
     </div>
@@ -311,7 +299,7 @@ session_regenerate_id();
   <!-- /success story -->
 
 
-  <!-- blog -->
+  <!-- News -->
   <section class="section pt-5">
     <div class="container">
       <div class="row">
@@ -320,15 +308,12 @@ session_regenerate_id();
         </div>
       </div>
       <div class="row justify-content-center">
-        <!-- blog post -->
         <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
           <div
             class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
             <img class="card-img-top rounded-0" src="images/blog/post-1.jpg" alt="Post thumb">
             <div class="card-body">
-              <!-- post meta -->
               <ul class="list-inline mb-3">
-                <!-- post date -->
                 <li class="list-inline-item mr-3 ml-0">August 28, 2020</li>
 
 
@@ -342,18 +327,14 @@ session_regenerate_id();
             </div>
           </div>
         </article>
-        <!-- blog post -->
+
         <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
           <div
             class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
             <img class="card-img-top rounded-0" src="images/blog/post-2.jpg" alt="Post thumb">
             <div class="card-body">
-              <!-- post meta -->
               <ul class="list-inline mb-3">
-                <!-- post date -->
                 <li class="list-inline-item mr-3 ml-0">August 13, 2020</li>
-                <!-- author -->
-
               </ul>
               <a href="amr-vs-bri.php">
                 <h4 class="card-title"> There are differences between words In British and American English</h4>
@@ -364,15 +345,13 @@ session_regenerate_id();
             </div>
           </div>
         </article>
-        <!-- blog post -->
+        
         <article class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
           <div
             class="card rounded-0 border-bottom border-primary border-top-0 border-left-0 border-right-0 hover-shadow">
             <img class="card-img-top rounded-0" src="images/blog/post-3.jpg" alt="Post thumb">
             <div class="card-body">
-              <!-- post meta -->
               <ul class="list-inline mb-3">
-                <!-- post date -->
                 <li class="list-inline-item mr-3 ml-0">August 24, 2020</li>
 
               </ul>
@@ -389,7 +368,7 @@ session_regenerate_id();
       </div>
     </div>
   </section>
-  <!-- /blog -->
+  <!-- /News -->
 
   <?php include_once "inc/footer.php";
 ?>

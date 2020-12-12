@@ -1,17 +1,13 @@
 
-
+-register and login link after login and before
 -review code and test for improvements on server
 
--Change addresses
--change address map
--address and footer in giro
--about and privacy page giro
+
 -new course sign up modal bank transfer
 -change user image modal
 
 
 -write db contents and tables
--update database diagram
 -write backend functionalities
 -write front end structure
 -organasie files into inc, models, process file, and library

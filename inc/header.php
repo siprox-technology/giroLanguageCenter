@@ -6,13 +6,13 @@
           <div class="col-lg-4 text-center text-lg-left">
             <a class="text-color mr-3" ><strong>CALL</strong> +98 905 4312848</a>
             <ul class="list-inline d-inline">
-              <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
+              <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color"><i
                     class="fab fa-facebook-f"></i></a></li>
-              <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
+              <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" ><i
                     class="fab fa-twitter"></i></a></li>
-              <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
+              <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" ><i
                    class="fab fa-linkedin-in"></i></a></li>
-              <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" href="#"><i
+              <li class="list-inline-item mx-0"><a class="d-inline-block p-2 text-color" ><i
                    class="fab fa-instagram"></i></a></li>
             </ul>
           </div>
@@ -85,11 +85,11 @@
               <li class="nav-item <?php if ($currentPage == 'index.php') {echo "active";} ?>">
                 <a class="nav-link" href="index.php">Home</a>
               </li>
-              <li class="nav-item @@about <?php if ($currentPage == 'about.php') {echo "active";} ?>">
-                <a class="nav-link" href="about.php">About</a>
-              </li>
               <li class="nav-item @@courses <?php if ($currentPage == 'courses.php') {echo "active";} ?>">
                 <a class="nav-link" href="courses.php">COURSES</a>
+              </li>
+              <li class="nav-item @@about <?php if ($currentPage == 'about.php') {echo "active";} ?>">
+                <a class="nav-link" href="about.php">About</a>
               </li>
               <li class="nav-item @@news <?php if ($currentPage == 'news.php') {echo "active";} ?>">
                 <a class="nav-link" href="news.php">News</a>
