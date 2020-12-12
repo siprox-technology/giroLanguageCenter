@@ -5,7 +5,7 @@
 
 -new course sign up modal bank transfer
 -change user image modal
-
+-add login register on footer
 
 -write db contents and tables
 -write backend functionalities

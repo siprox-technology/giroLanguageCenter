@@ -394,17 +394,11 @@ else
                     <div class="row">
                       <div class="col-md-12 py-3 mx-auto">
                         <!-- Credit card form tabs -->
-                        <ul role="tablist" class="nav bg-light nav-pills rounded-pill nav-fill mb-3">
-                          <li class="nav-item">
-                            <a data-toggle="pill" href="#nav-tab-card" class="btn nav-link active rounded-pill">
-                              Credit Card
-                            </a>
-                          </li>
-                          <li class="nav-item">
-                            <a data-toggle="pill" href="#nav-tab-bank" class="btn nav-link rounded-pill">
-                              <i class="fa fa-university"></i>
-                              Bank Transfer
-                            </a>
+                        <ul role="tablist" class="nav bg-primary nav-pills rounded-pill nav-fill mb-3">
+                          <li class="nav-item py-3">
+                            <p data-toggle="pill" href="#nav-tab-card" class="bg-primary text-center text-white mb-0">
+                              Credit/Debit Card
+                            </p>
                           </li>
                         </ul>
                         <div class="tab-content">
