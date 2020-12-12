@@ -1,11 +1,8 @@
 
 -register and login link after login and before
 -review code and test for improvements on server
-
-
--new course sign up modal bank transfer
--change user image modal
 -add login register on footer
+
 
 -write db contents and tables
 -write backend functionalities

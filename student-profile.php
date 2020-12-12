@@ -395,8 +395,8 @@ else
                       <div class="col-md-12 py-3 mx-auto">
                         <!-- Credit card form tabs -->
                         <ul role="tablist" class="nav bg-primary nav-pills rounded-pill nav-fill mb-3">
-                          <li class="nav-item py-3">
-                            <p data-toggle="pill" href="#nav-tab-card" class="bg-primary text-center text-white mb-0">
+                          <li class="py-3 m-auto">
+                            <p data-toggle="pill" href="#nav-tab-card" class="bg-primary text-white mb-0 m-auto">
                               Credit/Debit Card
                             </p>
                           </li>
@@ -946,12 +946,12 @@ else
         </div>
         <!--current courses form -->
         <div class="modal-body p-2 p-md-3">
-          <section class="bg-light page-section" style="min-height:200px" id="tessList">
+          <section class="bg-light page-section">
             <div class="container">
-              <div class="flex flex-column">
-                <input type="file" name="fileToUpload" id="fileToUpload" class="form-group">
-                <a class="btn btn-primary mb-3" onclick="change_user_img()">uploade</a>
-                <p class="d-none " id="image_upload_res"></p>
+              <div class="d-flex flex-column">
+                <input type="file" name="fileToUpload" id="fileToUpload" class="form-group w-50">
+                <a class="btn btn-primary mb-3 w-sm-50 " onclick="change_user_img()">uploade</a>
+                <p class="d-none" id="image_upload_res"></p>
               </div>
             </div>
           </section>

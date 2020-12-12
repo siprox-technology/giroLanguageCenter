@@ -542,7 +542,7 @@ function change_user_img() {
     // check if user selected any file
     if ($('#fileToUpload').val() == "") {
         $("#image_upload_res").removeClass()
-            .addClass("alert alert-danger")
+            .addClass("alert alert-danger w-sm-50")
             .text("Please select a file !");
     } else {
         //validate image file
@@ -553,7 +553,7 @@ function change_user_img() {
             //check file size
             if ($('#fileToUpload')[0].files[0].size > 40000) {
                 $("#image_upload_res").removeClass()
-                    .addClass("alert alert-danger")
+                    .addClass("alert alert-danger w-sm-50")
                     .text("image file size should be less than 40kb !");
             } else {
                 //send file to server
@@ -583,7 +583,7 @@ function change_user_img() {
                             case false:
                                 $('.preloader_ajax').addClass('d-none');
                                 $("#image_upload_res").removeClass()
-                                    .addClass("alert alert-danger")
+                                    .addClass("alert alert-danger w-sm-50")
                                     .text(result[1]);
                                 break;
                         }
@@ -592,7 +592,7 @@ function change_user_img() {
             }
         } else {
             $("#image_upload_res").removeClass()
-                .addClass("alert alert-danger")
+                .addClass("alert alert-danger w-sm-50")
                 .text("Only jpeg, jpg and png files are allowed !");
         }
     }
