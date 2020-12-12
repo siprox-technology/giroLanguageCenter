@@ -1163,7 +1163,6 @@ link:focus,
 
 .footer {
   border-color: #494a43 !important;
-  padding-top: 100px;
 }
 
 /* /footer */
@@ -1196,8 +1195,6 @@ link:focus,
   width: 22px;
   background-color: #FFC102;
   border-radius: 50%;
-  /*   margin-top: 5px;
-  margin-right: 4px; */
 }
 
 @media screen and (max-width:576px) {

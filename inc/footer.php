@@ -2,7 +2,7 @@
   <footer>
 
     <!-- footer content -->
-    <div class="footer bg-footer section border-bottom">
+    <div class="footer bg-footer py-5 border-bottom">
       <div class="container">
         <div class="row">
           <!-- contact -->
@@ -17,18 +17,18 @@
                 </a>
                 <ul class="list-unstyled mt-3 ml-3">
                   <li class="mb-2">
-                    <h3 class="text-white">Contact Us</h3>
+                    <h4 class="text-white">Contact Us</h4>
                   </li>
                   <li class="mb-2">
-                    <p class="mb-0 font-weight-bold text-white">Address:</p>
+                    <h6 class="mb-0 mt-3 text-white">Address:</h6>
                     <p class="mb-0 text-white">No 9, Ahmadi St Janbaz blvd, Mashhad Iran.</p>
                   </li>
                   <li class="mb-2">
-                    <p class="mb-0 font-weight-bold text-white">Phone:</p>
+                    <h6 class="mb-0  text-white">Phone:</h6>
                     <p class="mb-0 text-white">+98 905 4312848</p>             
                   </li>
                   <li class="mb-2">
-                    <p class="mb-0 font-weight-bold text-white">Email:</p>
+                    <h6 class="mb-0  text-white">Email:</h6>
                     <p class="mb-0 text-white">contact-giro-center@gmail.com</p>  
                   </li>
                 </ul>
@@ -39,13 +39,13 @@
             <div class="row pt-5">
                 <ul class="list-unstyled mt-4 ml-3">
                   <li class="mb-2">
-                    <h3 class="text-white">Courses</h3>
+                    <h4 class="text-white">Courses</h4>
                   </li>
                   <li class="mb-2 mt-3 d-flex flex-column">
-                    <a href="ielts.php" class="mt-2 font-weight-bold text-white">IELTS</a>
-                    <a href="toefl.php" class="mt-3 font-weight-bold text-white">TOEFL</a>
-                    <a href="genEnglish.php" class="mt-3 font-weight-bold text-white">GENERAL ENGLISH</a>
-                    <a href="specEnglish.php" class="mt-3 font-weight-bold text-white">SPECIALISED ENGLISH</a>  
+                    <a href="ielts.php" class="mt-2  text-white">IELTS</a>
+                    <a href="toefl.php" class="mt-3  text-white">TOEFL</a>
+                    <a href="genEnglish.php" class="mt-3  text-white">GENERAL ENGLISH</a>
+                    <a href="specEnglish.php" class="mt-3  text-white">SPECIALISED ENGLISH</a>  
                   </li>
                 </ul>
             </div>
@@ -55,7 +55,7 @@
             <div class="row pt-5">
                 <ul class="list-unstyled mt-4 ml-3">
                 <li class="mb-2">
-                    <h3 class="text-white">Opening hours</h3>
+                    <h4 class="text-white">Opening hours</h4>
                   </li>    
                     <li class="text-white mt-4"><span>Friday:</span> <span>09:00-18:00</span></li>
                     <li class="text-white mt-3"><span>Monday-Saturday:</span> <span>8.00-18.00</span></li>
@@ -67,7 +67,7 @@
       </div>
     </div>
     <!-- copyright -->
-    <div class="copyright py-4 bg-footer">
+    <div class="copyright pt-5 bg-footer">
       <div class="container">
         <div class="row">
           <div class="col-12 text-center">
