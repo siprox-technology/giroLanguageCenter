@@ -10,9 +10,9 @@ if(!isset($_POST['req_type']))
 {
     header('Location:index.php');
 }
-include_once 'inc/validate.php';
-include_once 'inc/db.php';
-include 'inc/user.php';
+include_once 'classes/validate.php';
+include_once 'classes/db.php';
+include 'classes/user.php';
 $val = new validate();
 $request_type =($val->validateAnyName($_POST['req_type']))==true? $_POST['req_type']: false;
 $connection= new DB();

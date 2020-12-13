@@ -1,6 +1,6 @@
 <?php
-include_once "db.php";
-include_once "validate.php";
+include_once "../classes/db.php";
+include_once "../classes/validate.php";
 // db connection 
 $conn = new DB();
 $con = $conn->connect_to_db();

@@ -107,9 +107,7 @@ Class User{
         $con->close();
         return $result; 
     }
-    public function change_image(){
-        
-    }
+
 
 }
 

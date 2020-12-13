@@ -194,7 +194,7 @@ $("#profile_body_student").on('click', '.popover h3 a', function () {
 function register_user() {
     if (!(is_form_empty("#signUpForm", 5))) {
         $.ajax({
-            url: 'inc/register.php',
+            url: 'functions/register.php',
             type: 'post',
             data: {
                 name: $('#name').val(),
@@ -291,7 +291,7 @@ $("#logInLink").on("click", function () {
 // user sign in
 function signin_user() {
     $.ajax({
-        url: 'inc/authenticate.php',
+        url: 'functions/authenticate.php',
         type: 'post',
         data: {
             email: $('#logInEmail').val(),
@@ -342,7 +342,7 @@ function signin_user() {
 //keep track of user click and typing on a page to expire sessions // to uncomment
 function send_active_signal() {
     $.ajax({
-        url: 'inc/session_time.php',
+        url: 'functions/session_time.php',
         type: 'post',
         data: {
             is_clicked: true,
@@ -351,7 +351,7 @@ function send_active_signal() {
         },
         success: function (response) {
             if (response === "timeOut") {
-                location.href = 'inc/logout.php';
+                location.href = 'functions/logout.php';
                 alert("Session time out...Please Login again");
             }
             if (response === "loggedOut") {
@@ -380,7 +380,7 @@ $("#forgotPassCheckBtn").change(function () {
 //request to email password reset code  
 function send_rand_code() {
     $.ajax({
-        url: 'controller.php',
+        url: 'process.php',
         type: 'post',
         data: {
             req_type: 'send reset pass code',
@@ -421,7 +421,7 @@ function change_pass_withCode() {
         } else {
             // ajax req to change pass
             $.ajax({
-                url: 'controller.php',
+                url: 'process.php',
                 type: 'post',
                 data: {
                     req_type: 'change password with code',
@@ -478,7 +478,7 @@ function edit_user_acc() {
     } else {
         /* ajax */
         $.ajax({
-            url: 'controller.php',
+            url: 'process.php',
             type: 'post',
             data: {
                 phone: $("#edited_phone").val(),
@@ -563,7 +563,7 @@ function change_user_img() {
                 form_data.append('req_type', 'change user image');
                 $.ajax({
                     type: 'POST',
-                    url: 'controller.php',
+                    url: 'process.php',
                     contentType: false,
                     processData: false,
                     data: form_data,
@@ -646,7 +646,7 @@ function get_course_names() {
     //check to see that value selected is not null. 100 is null
     if ($('#course_category_list').val() !== "100") {
         $.ajax({
-            url: 'controller.php',
+            url: 'process.php',
             type: 'post',
             data: {
                 req_type: "select course title",
@@ -677,7 +677,7 @@ function get_course_levels() {
     //check the value is not null. 'Choose...' would be null
     if ($('#course_name_list').val() !== "Choose...") {
         $.ajax({
-            url: 'controller.php',
+            url: 'process.php',
             type: 'post',
             data: {
                 req_type: "select course level",
@@ -709,7 +709,7 @@ function get_course_fees() {
         var selectedlevel = $('#course_level_list').val();
         var selectedTitle = $('#course_name_list').val();
         $.ajax({
-            url: 'controller.php',
+            url: 'process.php',
             type: 'post',
             data: {
                 req_type: "select course fees",
@@ -747,7 +747,7 @@ function course_payment() {
     // check if all card fields are populated  
     if ((is_form_empty("#crd-card-form", 6) == false)) {
         $.ajax({
-            url: 'controller.php',
+            url: 'process.php',
             type: 'post',
             data: {
                 req_type: "make payment for course",
@@ -899,7 +899,7 @@ function download_course_payment_pdf() {
 // update list of classes in both desktop and mobile view
 function update_class_list() {
     $.ajax({
-        url: 'controller.php',
+        url: 'process.php',
         type: 'post',
         data: {
             req_type: 'get class list',
@@ -999,7 +999,7 @@ function get_avail_test() {
     $("#test_pymnt_ref,#test_pymnt_amount,#test_pymnt_date,#test_pymnt_user_id,#test_test_id").text("");
     $('#test_signup_payment').carousel(0);
     $.ajax({
-        url: 'controller.php',
+        url: 'process.php',
         type: 'post',
         data: {
             req_type: "get test list"
@@ -1033,7 +1033,7 @@ function test_payment() {
     // test to see if paymt form is empty or test has benn selected
     if (is_form_empty('#testSignUpForm', 6) == false && $comb_string.length > 1) {
         $.ajax({
-            url: 'controller.php',
+            url: 'process.php',
             type: 'post',
             data: {
                 req_type: "make payment for test",
@@ -1124,7 +1124,7 @@ function test_payment() {
 //show list of signedup tests and its results for user
 function get_test_result() {
     $.ajax({
-        url: 'controller.php',
+        url: 'process.php',
         type: 'post',
         data: {
             req_type: 'get test results',
@@ -1187,7 +1187,7 @@ function get_cert_list() {
     $("#cert_pymnt_ref,#cert_pymnt_amount,#cert_pymnt_date,#cert_pymnt_user_id,#cert_id").text("");
     $('#certficate_req_payment').carousel(0);
     $.ajax({
-        url: 'controller.php',
+        url: 'process.php',
         type: 'post',
         data: {
             req_type: "get certificate list",
@@ -1224,7 +1224,7 @@ function cert_payment() {
     var price = $('#cert_name_list').children("option:selected").text().substr(index + 9);
     if (is_form_empty('#cert_req_SignUpForm', 6) == false) {
         $.ajax({
-            url: 'controller.php',
+            url: 'process.php',
             type: 'post',
             data: {
                 req_type: "make payment for certifcate",

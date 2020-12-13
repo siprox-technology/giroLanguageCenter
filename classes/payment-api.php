@@ -9,6 +9,7 @@ Class Payment_Api{
     private $pin='';
     private $is_success= false;
     private $reference_num = '';
+    
     public function make_payment($nameOnCard, $cardNumber,
     $exp_month,$exp_year,$cvv,$amount,$pin){
 

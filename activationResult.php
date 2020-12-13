@@ -40,6 +40,8 @@ session_regenerate_id();
 
   <!-- log in Modal -->
   <?php include "inc/login-modal.php"?>
+  <!-- signUp Modal -->
+  <?php include "inc/signup-modal.php"?>
 <!-- Activation result -->
     <section class="hero-section overlay bg-cover" data-background="images/banner/banner-1.jpg">
         <div class="container">

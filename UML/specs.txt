@@ -74,15 +74,15 @@ result
 
 Back end functionalities=>
 
- -User registration and activation.
- -Account log in, logout, session time, forgot password.
+ -User registration and activation.+
+ -Account log in, logout, session time, forgot password+
  -User profile with following functionalities:
-  -Add and update user image with appropriate file type and size.
-  -Update profile info (address and phone number).
+  -Add and update user image with appropriate file type and size.+
+  -Update profile info (address and phone number).+
   -Sign up for public and private courses.+
   -Display course payment confirmation as PDF after payment process.+
   -Show list of signed up public and private courses and finished courses with grades+
-  -Online international examination mock test reserve and payment.+
+  -Online international examination mock test reserve and payment+
   -Show list of signed up and finished any test with grades.+
   -Online course certification request and payment- display receipt as PDF+
 

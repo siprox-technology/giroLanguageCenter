@@ -38,8 +38,8 @@ else
         }
         else
         {
-            include_once 'validate.php';
-            include_once 'db.php';
+            include_once '../classes/validate.php';
+            include_once '../classes/db.php';
             // check token
             // database connection
             $connection = new DB();

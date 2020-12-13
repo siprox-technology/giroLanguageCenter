@@ -73,7 +73,7 @@ else
                     if(isset($_SESSION['loggedin']))
                     {echo"<li class='list-inline-item'><a class= text-color p-sm-2 py-2 px-0 d-inline-block'
                     id='profileLink'>"."Hi,  ".$_SESSION['name']."</a></li>";
-                    echo"<li class='list-inline-item'><a class= text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block' href='inc/logout.php'
+                    echo"<li class='list-inline-item'><a class= text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block' href='functions/logout.php'
                     id='logOutLink'>Logout</a></li>";
                     }else
                     {echo"<li class='list-inline-item'><a class='text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block' href=''

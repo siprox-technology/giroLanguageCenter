@@ -16,8 +16,8 @@ session_regenerate_id();
     //token ok
     else
     {
-        include_once 'validate.php';
-        include_once 'db.php';
+        include_once '../classes/validate.php';
+        include_once '../classes/db.php';
         //database connection 
         $conn = new DB();
         $con = $conn->connect_to_db();
@@ -56,7 +56,7 @@ session_regenerate_id();
                         $subject = 'Account Activation Required';
         
                         $headers = 'From: ' . $from . "\r\n" . 'Reply-To: ' . $from . "\r\n" . 'X-Mailer: PHP/' . phpversion() . "\r\n" . 'MIME-Version: 1.0' . "\r\n" . 'Content-Type: text/html; charset=UTF-8' . "\r\n";
-                        $activate_link = 'http://localhost/lang_inst v-3.0/inc/activate.php?email=' . $email . '&code=' . $uniqId;
+                        $activate_link = 'http://localhost/lang_inst v-3.0/functions/activate.php?email=' . $email . '&code=' . $uniqId;
                         $message = '<p>Please click the following link to activate your account: <a href="' . $activate_link . '">' . $activate_link . '</a></p>';
                         $isSent = mail($email, $subject, $message, $headers);
                         if($isSent)
