@@ -1,7 +1,6 @@
 
 -review code and test for improvements on server
 -organasie files into inc, models, process file, and library (version 4)
--minify css js
 
 db update
 

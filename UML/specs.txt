@@ -74,7 +74,7 @@ result
 
 Back end functionalities=>
 
- -User registration and activation.
+ -User registration and activation.-
  -Account log in, logout, session time, forgot password.+
  -User profile with following functionalities:
   -Add and update user image with appropriate file type and size.+
