@@ -988,7 +988,6 @@ else
     update_class_list();
     get_test_result();
     get_avail_test();
-    get_test_result();
     get_cert_list();
   </script>
 </body>
