@@ -1203,7 +1203,7 @@ function get_cert_list() {
                     "<option value=" + row[0] + ">" + row[1] + "--" + row[3] + "--level: " + row[5] + "--price: " + row[8] + "</option>"
                 );
             }
-            $("#cert_achieved_profile").append(cert_names.length);
+            $("#cert_achieved_profile").text(cert_names.length);
         },
     });
 
