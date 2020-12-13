@@ -58,10 +58,13 @@
     <div class="navigation w-100">
       <div class="container p-0">
         <nav class="navbar navbar-expand-lg navbar-light p-0 justify-content-around ">
-          <div class="circle_pages m-2 m-sm-4 mt-xl-3"></div>
-          <a class="h4 mt-1" style="color:#FFC102"
-            href="index.php"><b>GIRO</b>
-            LANGUAGE<br>CENTER</a>
+          <a href="index.php">
+            <div class="row">
+              <div class="col-3 pl-4">
+                <img src="images/transparent-icone-removebg-preview.png"  class=""alt="">
+              </div>
+            </div>
+          </a>
           <button class="navbar-toggler rounded-0 ml-auto" type="button" data-toggle="collapse" data-target="#navigation"
             aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

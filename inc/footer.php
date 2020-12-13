@@ -2,22 +2,22 @@
   <footer>
 
     <!-- footer content -->
-    <div class="footer bg-footer py-5 border-bottom">
-      <div class="container">
-        <div class="row">
+    <div class="footer bg-footer pt-5 border-bottom">
+      <div class="container d-flex flex-column">
+        <a href="index.php">
+          <div class="row">
+            <div class="col-3 pl-2">
+              <img src="images/transparent-icone-removebg-preview.png"  class=""alt="">
+            </div>
+          </div>
+        </a>
+        <div class="row pt-5">
           <!-- contact -->
           <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mb-lg-0">
             <div class="row">
-                <div class="col-2 p-0 pb-1  d-flex justify-content-center align-items-center">
-                  <img class="circle_pages_footer">
-                </div>
-                <a class="col-9 h4 px-0" style="color:#FFC102"
-                  href="index.php"><b>GIRO</b>
-                  LANGUAGE<br>CENTER
-                </a>
-                <ul class="list-unstyled mt-3 ml-3">
+                <ul class="list-unstyled ml-3">
                   <li class="mb-2">
-                    <h4 class="text-white">Contact Us</h4>
+                    <h4 class="text_yellow">Contact Us</h4>
                   </li>
                   <li class="mb-2">
                     <h6 class="mb-0 mt-3 text-white">Address:</h6>
@@ -28,11 +28,11 @@
                     
                   </li>
                   <li class="mb-2">
-                    <h6 class="mb-0  text-white">Phone:</h6>
+                    <h6 class="mb-0  text_yellow">Phone:</h6>
                     <p class="mb-0 text-white">+98 905 4312848</p>             
                   </li>
                   <li class="mb-2">
-                    <h6 class="mb-0  text-white">Email:</h6>
+                    <h6 class="mb-0  text_yellow">Email:</h6>
                     <p class="mb-0 text-white">contact-giro-center@gmail.com</p>  
                   </li>
                 </ul>
@@ -40,10 +40,10 @@
           </div>
           <!-- services -->
           <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mb-lg-0">
-            <div class="row pt-5">
-                <ul class="list-unstyled mt-4 ml-3">
+            <div class="row">
+                <ul class="list-unstyled ml-3">
                   <li class="mb-2">
-                    <h4 class="text-white">Courses</h4>
+                    <h4 class="text_yellow">Courses</h4>
                   </li>
                   <li class="mb-2 mt-3 d-flex flex-column">
                     <a href="ielts.php" class="mt-2  text-white">IELTS</a>
@@ -56,10 +56,10 @@
           </div>
           <!-- opening hours -->
           <div class="col-lg-4 col-md-6 col-sm-12 mb-5 mb-lg-0">
-            <div class="row pt-5">
-                <ul class="list-unstyled mt-4 ml-3">
+            <div class="row ">
+                <ul class="list-unstyled ml-3">
                 <li class="mb-2">
-                    <h4 class="text-white">Opening hours</h4>
+                    <h4 class="text_yellow">Opening hours</h4>
                   </li>    
                     <li class="text-white mt-4"><span>Friday:</span> <span>09:00-18:00</span></li>
                     <li class="text-white mt-3"><span>Monday-Saturday:</span> <span>8.00-18.00</span></li>

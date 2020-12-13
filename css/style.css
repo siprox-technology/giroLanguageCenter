@@ -51,7 +51,7 @@ body {
 
 /* user change image button */
 .current_courses_status {
-  background-color: #FFC102;
+  background-color: #ccbe5d;
 }
 
 .current_cert_status {
@@ -59,7 +59,7 @@ body {
 }
 
 .text_yellow {
-  color: #FFC102;
+  color: #ccbe5d;
 }
 
 .text_grey {
@@ -1184,7 +1184,7 @@ link:focus,
 .circle_pages {
   height: 22px;
   width: 22px;
-  background-color: #FFC102;
+  background-color: #ccbe5d;
   border-radius: 50%;
   margin-top: 5px;
   margin-right: 4px;
@@ -1193,7 +1193,7 @@ link:focus,
 .circle_pages_footer {
   height: 22px;
   width: 22px;
-  background-color: #FFC102;
+  background-color: #ccbe5d;
   border-radius: 50%;
 }
 
@@ -1209,7 +1209,7 @@ link:focus,
   .circle_pages_footer {
     height: 22px;
     width: 22px;
-    background-color: #FFC102;
+    background-color: #ccbe5d;
     border-radius: 50%;
   }
 
