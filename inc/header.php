@@ -39,19 +39,6 @@
                           id='logOutLink'>Logout</a></li>";
                         break;
   
-                        case '2':
-                          echo"<li class='list-inline-item'><a class= text-color p-sm-2 py-2 px-0 d-inline-block' href='teacher-profile.php'
-                          id='profileLink'>"."Hi,  ".$_SESSION['name']."</a></li>";
-                          echo"<li class='list-inline-item'><a class= text-uppercase text-color p-sm-2 py-2 px-0 d-inline-block' href='inc/logout.php'
-                          id='logOutLink'>Logout</a></li>";
-                        break;
-  
-                        case '3':
-                        break;
-  
-                        case'4':
-                        break;
-  
                         default:
                       break;
                       }

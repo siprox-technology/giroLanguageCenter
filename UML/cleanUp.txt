@@ -1,13 +1,7 @@
 
--register and login link after login and before
+-remove extra files
 -review code and test for improvements on server
--add login register on footer
-
-
--write db contents and tables
--write backend functionalities
--write front end structure
--organasie files into inc, models, process file, and library
+-organasie files into inc, models, process file, and library (version 4)
 
 
 db update

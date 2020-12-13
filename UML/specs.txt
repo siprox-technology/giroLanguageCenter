@@ -1,0 +1,158 @@
+GIRO Language center website
+------------------------------
+
+Database tables => user, product, payment,
+signed_up_course, certificate, cert_req_list
+course, test, test_student_list, timetable
+---------------------------------------------
+Database diagram => (DataBaseDiagram.vsdx)
+---------------------------------------------
+
+Database tables details =>
+
+user:
+id,pass,name,tell,email,address,
+active_status, act_code
+
+---------------------------------
+product:
+id,name
+
+------------------------------
+Payment:
+id,user_id,
+last_four_digit,nameOnCard,
+Date,time,amount,reference_num,
+test_id,cert_id,course_title
+
+---------------------------------
+signed_up_course has:
+id,FK_course_id_signed_course
+FK_user_id_signed_user 
+status
+grade
+
+-------------------------------
+certificate:
+id 
+cert_name,rec_name,date,language,
+level,FK_user_id_cert_user
+FK_product_id_cert_product,price
+
+--------------------------------
+cert_req_list:
+id,FK_cert_id_list_cert,fee 
+status
+
+--------------------------------
+course:
+id 
+title,language,language_level 
+type,tuition ,student_capacity
+FK_Product_id_course_product, 
+teacher_name
+
+----------------------------------------
+test:
+id,
+name,type
+level,fee,capacity,date,time
+address,result_status,FK_product_id_test_product 
+
+-----------------------------------------------
+timetable:
+id,FK_course_id_timetable_course,duration
+day,time,start_date,room_no 
+
+--------------------------------------------
+test_student_list:
+id 
+FK_test_id_list_test 
+FK_user_id_test_list_user  
+result 
+*****************************************
+
+Back end functionalities=>
+
+ -User registration and activation.+
+ -Account log in, logout, session time, forgot password.+
+ -User profile with following functionalities:
+  -Add and update user image with appropriate file type and size.+
+  -Update profile info (address and phone number).+
+  -Sign up for public and private courses.+
+  -Display course payment confirmation as PDF after payment process.+
+  -Show list of signed up public and private courses and finished courses with grades+
+  -Online international examination mock test reserve and payment.+
+  -Show list of signed up and finished any test with grades.+
+  -Online course certification request and payment- display receipt as PDF+
+
+
+*****************************************
+
+
+Front end page structure=>
+
+-Home page: 
+ -registe and login link, forget password
+ -Courses, About, News, Contact link
+ -Information about GIRO language center
+ -customer service:
+ -contact : phone, email, address
+ -Courses
+   -IELTS,TOEFL,GENERAL ENGLISH,SPECIALISED ENGLISH
+  -business hours
+-َAbout us
+ -why us?
+-Contact Us ارتباط با ما
+ -phone,email,address
+ -Google Map image link to address
+
+-News and Offers
+ -news,offers and discounts
+
+-student profile 
+  -personal info
+  -sign up for classes 
+  -Examination Results 
+  -Current and finished Courses
+  -certification request form 
+  -current certifications
+  -exams and tests
+  -User account 
+    -change phone number
+    -change address
+    -change profile image
+-Courses
+   -IELTS,TOEFL,GENERAL ENGLISH,SPECIALISED ENGLISH
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+List of back end functionalities: 
+
+
+
+
+
+
+
+ 
