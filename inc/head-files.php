@@ -19,5 +19,4 @@
   <link href="css/style.css" rel="stylesheet">
 
   <!--icon-->
-  <link rel="shortcut icon" href="images/icon.png" type="image/icon">
-  <link rel="icon" href="images/icon.png" type="image/icon">
+  <link href="images/favicon.ico" rel="icon">
