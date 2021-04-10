@@ -400,7 +400,7 @@ function send_rand_code() {
                     location.href = 'reset_pass.php?user=' + $("#logInEmail").val();
                 }, 3000);
             }
-            if (response === "Unable to send activation email") {
+            if (response === "Unable to send the reset code") {
                 $('#logIn_result').removeClass('d-none').text(" ").text(response).addClass("alert alert-danger");
 
             }

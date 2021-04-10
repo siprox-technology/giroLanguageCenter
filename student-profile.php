@@ -574,12 +574,12 @@ else
                       <tr>
                         <th scope="col">Course title</th>
                         <th scope="col">Level</th>
-                        <th scope="col">Start date</th>
+                        <th scope="col">Teacher</th>
+                        <th scope="col">Start Date</th>
                         <th scope="col">Duration</th>
                         <th scope="col">Days</th>
                         <th scope="col">Time</th>
                         <th scope="col">Room</th>
-                        <th scope="col">Teacher</th>
                         <th scope="col">Status</th>
                         <th scope="col">Grade</th>
                       </tr>

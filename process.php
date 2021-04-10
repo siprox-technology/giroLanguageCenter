@@ -141,12 +141,12 @@ switch($request_type)
         $_SESSION['generated_code'] = $rand_index;
         // email uniqe code to user
         $email = $_POST['email'];
-        $from = 'integralproject1988@gmail.com';
+        $from = 'siproxtech@gmail.com';
         $subject = 'Password reset code';
         $headers = 'From: ' . $from . "\r\n" . 'Reply-To: ' . $from . "\r\n" . 'Content-Type: text/html; charset=UTF-8' . "\r\n";
         $message = '<p>YOUR PASSWORD RESET CODE IS : <b>'.$rand_index.'</b></p>';
         $isSend = mail($email, $subject, $message, $headers);
-        if($isSend){echo "Please check your email for Reset Password Code";}else{echo "Unable to send activation email";}
+        if($isSend){echo "Please check your email for Reset Password Code";}else{echo "Unable to send the reset code";}
            break;
 
     case 'change password with code':
