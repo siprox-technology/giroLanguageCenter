@@ -80,7 +80,7 @@
                 var CurrentYear = new Date().getFullYear()
                 document.write(CurrentYear)
               </script>
-              © <a href="https://www.siprox-tech.com" target="_blank">SIPROX-TECH</a></p>
+              © <a href="https://www.siprox-tech.com" target="_blank">SIPROX TECHNOLOGY</a></p>
           </div>
         </div>
       </div>
