@@ -2,8 +2,8 @@
 -- version 4.9.1
 -- https://www.phpmyadmin.net/
 --
--- Host: 127.0.0.1
--- Generation Time: Dec 14, 2020 at 09:10 AM
+-- Host: localhost:3306
+-- Generation Time: Jul 03, 2021 at 06:15 AM
 -- Server version: 10.4.8-MariaDB
 -- PHP Version: 7.3.10
 
@@ -13,31 +13,9 @@ START TRANSACTION;
 SET time_zone = "+00:00";
 
 
-/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
-/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
-/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
-/*!40101 SET NAMES utf8mb4 */;
-
 --
 -- Database: `siproxte_giro`
 --
-
-DELIMITER $$
---
--- Procedures
---
-CREATE DEFINER=`siproxte_giro`@`localhost` PROCEDURE `InsertRand` (IN `NumRows` INT, IN `MinVal` INT, IN `MaxVal` INT)  BEGIN
-        DECLARE i INT;
-        SET i = 1;
-        START TRANSACTION;
-        WHILE i <= NumRows DO
-            INSERT INTO random_code(code) VALUES (MinVal + CEIL(RAND() * (MaxVal - MinVal)));
-            SET i = i + 1;
-        END WHILE;
-        COMMIT;
-    END$$
-
-DELIMITER ;
 
 -- --------------------------------------------------------
 
@@ -374,7 +352,7 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `Pass`, `name`, `tell`, `email`, `address`, `active_status`, `act_code`) VALUES
-(129, '$2y$10$SO8d7C46U00emmWBSvBA/uEtacHPLRrJFbizFSqMWLkYt7Kle.1v2', 'Mehran Zahedi', '+989371373930', 'frog.orange.shk@gmail.com', '13 Daneshjoo Germany', '1', 'activated'),
+(129, '$2y$10$Nfq4RY.bRwaJZO.J9CI0FeA4/9DQv1N9xWHRIlzeZp1yENNyyGJkq', 'Mehran Zahedi', '+989371373930', 'frog.orange.shk@gmail.com', '13 Daneshjoo Germany', '1', 'activated'),
 (141, '$2y$10$J7nHbkjgF1bitDaisjjbQuDIV7U6j6In1TT78oPaIsviKBzUeikpC', 'Amir Fakouri', '+989371373900', 'per.sor.ml@gmail.com', 'No 85 Farhad St clifton UK', '1', 'activated'),
 (145, '$2y$10$vlzLIm4VnfgX62j6gz0fP.QYzzvG4nSaMJQ8yeFADEEMOxB3aWhdi', 'Ali Ahmadi', '+989371373900', 'soroosh_66m@yahoo.com', 'No 85 Farhad St clifton UK', '1', 'activated');
 
@@ -548,6 +526,3 @@ ALTER TABLE `timetable`
   ADD CONSTRAINT `FK_course_id_timetable_course` FOREIGN KEY (`FK_course_id_timetable_course`) REFERENCES `course` (`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 COMMIT;
 
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
-/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
-/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
