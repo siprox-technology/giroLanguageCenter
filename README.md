@@ -5,4 +5,4 @@ database connection is in classes/db.php.
 
 please feel free to use any parts of this project in your code
 
-cheers to developers community... happy coding
+cheers to developers community... happy coding.
