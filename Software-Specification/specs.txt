@@ -104,7 +104,7 @@ Front end page structure=>
   -business hours
 -َAbout us
  -why us?
--Contact Us ارتباط با ما
+-Contact Us
  -phone,email,address
  -Google Map image link to address
 
