@@ -4,8 +4,8 @@ include_once 'payment-api.php';
 class DB{
         //database properites
         private $DATABASE_HOST = 'localhost';
-        private $DATABASE_USER = 'siproxte_giro';
-        private $DATABASE_PASS = '123456sip@giroabvg';
+        private $DATABASE_USER = 'root';
+        private $DATABASE_PASS = 'password';
         private $DATABASE_NAME = 'siproxte_giro';
         // connection to db
         public function connect_to_db()
